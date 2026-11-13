@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# build output (the exe goes to GitHub Releases)
+build/
+dist/
+
+# stray files
+nul
+nul.png

@@ -1,0 +1,5 @@
+yt-dlp[default,curl-cffi]
+pystray
+pillow
+sv-ttk
+tkinterdnd2
