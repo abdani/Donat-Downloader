@@ -17,20 +17,21 @@
 
 ## Features
 
-- **Copy a link and it's ready.** Donat watches the clipboard. When you copy a supported link, a card pops up above the tray. One click opens the format panel, where you confirm before anything downloads.
-- **YouTube and 1,700+ sites**, powered by [yt-dlp](https://github.com/yt-dlp/yt-dlp): TikTok, Instagram, X, SoundCloud, Bandcamp and many more. Playlists and channels download into their own subfolder, after a confirmation.
-- **Choose the exact format**
-  - Video: MP4, MKV or WebM, resolutions up to 2160p, codec H.264, VP9 or AV1.
-  - Audio: MP3 (128–320 kbps), M4A, Opus, FLAC or WAV.
-  - Size estimates in the format panel match the file that actually downloads.
-- **Clips.** Download only part of a video, from `1:30` to `2:45`.
-- **Fast.** Parallel connections per download, several downloads at once, and pause/resume that continues where it stopped. An optional speed limit is there when you need the bandwidth for something else.
-- **History dashboard** with thumbnails and search. Right-click any row to open the file, show it in its folder, copy the link, download it again in another format, or move the file to the Recycle Bin.
-- **Embeds** the thumbnail, metadata and (optionally) Indonesian/English subtitles into the file.
-- **Stays out of the way.** It can start with Windows straight into the tray, and the tray icon shows overall progress. Drag a link from the browser onto the window to add it.
-- **YouTube login only when needed.** If YouTube asks for a sign-in (its anti-bot check), Donat can reuse the login from your browser, or from a `cookies.txt` file.
-- **Light, dark or system theme**, in English or Indonesian.
-- **Self-contained.** One ~33 MB exe with FFmpeg and a JavaScript runtime (QuickJS) built in. The yt-dlp engine updates itself from PyPI, and every update is checksum-verified.
+| Feature | Details |
+| --- | --- |
+| **Copy → download** | Copy a link anywhere and a card pops up above the tray. One click opens the format panel to confirm. |
+| **1,700+ sites** | YouTube, TikTok, Instagram, X, SoundCloud, Bandcamp and more, via [yt-dlp](https://github.com/yt-dlp/yt-dlp). Playlists and channels go into their own folder. |
+| **Video** | MP4, MKV or WebM, up to 2160p, with H.264, VP9 or AV1 |
+| **Audio** | MP3 (128–320 kbps), M4A, Opus, FLAC or WAV |
+| **Exact sizes** | The panel shows the real size of the file it will download |
+| **Clips** | Download only part of a video, e.g. `1:30` to `2:45` |
+| **Speed** | Parallel connections, simultaneous downloads, pause/resume, optional speed limit |
+| **History** | Thumbnails and search. Right-click to open, show in folder, copy link, re-download or recycle the file. |
+| **Embedding** | Cover art, metadata, optional Indonesian/English subtitles |
+| **Tray** | Starts with Windows into the tray, shows progress there, accepts drag-and-dropped links |
+| **YouTube login** | Only when YouTube asks: reuses your browser login or a `cookies.txt` file |
+| **Look** | Light, dark or system theme, in English or Indonesian |
+| **Self-contained** | One ~33 MB exe with FFmpeg and QuickJS inside. yt-dlp updates itself, checksum-verified. |
 
 ## Screenshots
 
