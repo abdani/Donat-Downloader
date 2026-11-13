@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Is my site supported?
+    url: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md
+    about: Donat Downloader supports every site yt-dlp supports.

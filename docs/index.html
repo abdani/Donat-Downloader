@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donat Downloader – free YouTube & video downloader</title>
+<meta name="description" content="Donat Downloader is a free, fast Windows app to download video and music from YouTube and 1,700+ sites. Copy a link, pick MP4, MKV, MP3 or FLAC, done. One small exe, nothing else to install.">
+<meta name="author" content="Dani Abdani">
+<link rel="canonical" href="https://abdani.github.io/Donat-Downloader/">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Donat Downloader – free video & music downloader">
+<meta property="og:description" content="YouTube and 1,700+ sites. Copy a link, pick a format, done. One small exe.">
+<meta property="og:url" content="https://abdani.github.io/Donat-Downloader/">
+<meta property="og:image" content="https://abdani.github.io/Donat-Downloader/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "SoftwareApplication",
+ "name": "Donat Downloader", "operatingSystem": "Windows 10, Windows 11", "applicationCategory": "MultimediaApplication",
+ "description": "Free Windows downloader for video and music from YouTube and 1,700+ sites.",
+ "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+ "downloadUrl": "https://github.com/abdani/Donat-Downloader/releases/latest/download/Donat-Downloader.exe",
+ "image": "https://abdani.github.io/Donat-Downloader/images/social-preview.png",
+ "screenshot": "https://abdani.github.io/Donat-Downloader/images/dashboard.png",
+ "author": {"@type": "Person", "name": "Dani Abdani", "url": "https://github.com/abdani"},
+ "license": "https://opensource.org/licenses/MIT"}
+</script>
+<style>
+  :root {
+    --bg: #111111; --surface: #1b1b1b; --line: #2a2a2a; --text: #f2f2f2; --muted: #a3a3a3;
+    --accent: #4cc2ff; --accent-text: #001b2b; --pink: #f472b6;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #fafafa; --surface: #ffffff; --line: #e6e6e6; --text: #1a1a1a; --muted: #5c5c5c;
+            --accent: #0067c0; --accent-text: #ffffff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+         font: 16px/1.6 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  header.wrap { padding-top: 64px; padding-bottom: 32px; text-align: center; }
+  .logo { width: 96px; height: 96px; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; margin: 16px 0 12px; letter-spacing: -0.02em; }
+  .lead { font-size: 1.2rem; color: var(--muted); max-width: 620px; margin: 0 auto 28px; }
+  .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; font-weight: 600; text-decoration: none;
+         border: 1px solid var(--line); color: var(--text); background: var(--surface); }
+  .btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+  .note { color: var(--muted); font-size: .9rem; margin-top: 14px; }
+  .shot { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line);
+          box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+  section.wrap { padding-top: 56px; padding-bottom: 56px; }  /* .wrap alone would zero the vertical padding */
+  h2 { font-size: 1.7rem; margin: 0 0 8px; text-align: center; }
+  .sub { color: var(--muted); text-align: center; margin: 0 0 32px; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; counter-reset: s; }
+  .steps div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .steps div::before { counter-increment: s; content: counter(s); display: inline-grid; place-items: center;
+                       width: 28px; height: 28px; border-radius: 50%; background: var(--pink); color: #fff;
+                       font-weight: 700; margin-bottom: 8px; }
+  .steps h3, .grid h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .steps p, .grid p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .card-shot { display: block; width: 100%; max-width: 480px; height: auto; margin: 28px auto 0; border-radius: 10px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .grid div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  figure { margin: 0; }
+  figcaption { color: var(--muted); font-size: .9rem; text-align: center; margin-top: 8px; }
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin: 10px 0 0; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: .9rem; text-align: center; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="logo" src="images/donut.png" alt="">
+  <h1>Donat Downloader</h1>
+  <p class="lead">A fast, modern downloader for video and music from YouTube and 1,700+ other sites.
+    Copy a link, pick a format, done.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/abdani/Donat-Downloader/releases/latest/download/Donat-Downloader.exe">Download for Windows</a>
+    <a class="btn" href="https://github.com/abdani/Donat-Downloader">View on GitHub</a>
+  </div>
+  <p class="note">Free and open source · one ~33 MB exe · Windows 10 / 11, 64-bit</p>
+</header>
+
+<div class="wrap"><img class="shot" src="images/dashboard.png" width="1122" height="692"
+  alt="Donat Downloader dashboard with download history and thumbnails"></div>
+
+<section class="wrap">
+  <h2>Copy a link, that's it</h2>
+  <p class="sub">No browser extension and no copy-paste dance.</p>
+  <div class="steps">
+    <div><h3>Copy a link</h3><p>From YouTube, TikTok, Instagram, X, SoundCloud and 1,700+ more sites, anywhere on your PC.</p></div>
+    <div><h3>Click the card</h3><p>A card pops up above the tray with the title and thumbnail. Click to open the format panel.</p></div>
+    <div><h3>Pick a format</h3><p>MP4 in 4K, MP3 at 320 kbps, FLAC, or just a clip from 1:30 to 2:45. Press Download.</p></div>
+  </div>
+  <img class="card-shot" src="images/clipboard-card.png" width="480" height="225" alt="Notification card after copying a YouTube link">
+</section>
+
+<section class="wrap">
+  <h2>Everything you need, nothing you don't</h2>
+  <p class="sub">One small exe. FFmpeg and a JavaScript runtime are built in, so there is nothing else to install.</p>
+  <div class="grid">
+    <div><h3>Every format</h3><p>MP4, MKV or WebM up to 2160p with H.264, VP9 or AV1. Audio in MP3, M4A, Opus, FLAC or WAV.</p></div>
+    <div><h3>Fast</h3><p>Parallel connections, several downloads at once, and pause/resume that continues where it stopped.</p></div>
+    <div><h3>Accurate sizes</h3><p>The format panel shows the size of the file that will actually download, per resolution.</p></div>
+    <div><h3>Clips & playlists</h3><p>Cut a part of a video, or grab a whole playlist or channel into its own folder.</p></div>
+    <div><h3>History dashboard</h3><p>Thumbnails, search, and a right-click menu to open, re-download or recycle files.</p></div>
+    <div><h3>Thumbnails & metadata</h3><p>Cover art, title and tags are embedded, with optional subtitles.</p></div>
+    <div><h3>Always up to date</h3><p>The yt-dlp engine updates itself, and every update is checksum-verified before it is used.</p></div>
+    <div><h3>Feels at home</h3><p>Light and dark themes, English or Indonesian. It can start with Windows straight into the tray.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Screenshots</h2>
+  <p class="sub">The real app, shown with Blender Studio open movies.</p>
+  <div class="gallery">
+    <figure><img class="shot" src="images/downloads.png" width="1122" height="692" alt="Format panel and downloads in progress" loading="lazy"><figcaption>Format panel and downloads</figcaption></figure>
+    <figure><img class="shot" src="images/context-menu.png" width="1122" height="692" alt="Right-click menu on the history" loading="lazy"><figcaption>Right-click menu</figcaption></figure>
+    <figure><img class="shot" src="images/settings.png" width="1122" height="692" alt="Settings page" loading="lazy"><figcaption>Settings</figcaption></figure>
+    <figure><img class="shot" src="images/dashboard-light.png" width="1122" height="692" alt="Dashboard in the light theme" loading="lazy"><figcaption>Light theme</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>FAQ</h2>
+  <p class="sub">&nbsp;</p>
+  <details><summary>Windows SmartScreen warns me when I open it. Is it safe?</summary>
+    <p>The exe isn't code-signed yet, so Windows doesn't recognise the publisher. Choose <b>More info → Run anyway</b>.
+    The full source code is <a href="https://github.com/abdani/Donat-Downloader">on GitHub</a>, and every release lists its SHA256 checksum.</p></details>
+  <details><summary>Which sites are supported?</summary>
+    <p>Everything <a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">yt-dlp supports</a>: YouTube, YouTube Music,
+    TikTok, Instagram, X, Facebook, SoundCloud, Bandcamp, Vimeo and about 1,700 more.</p></details>
+  <details><summary>Where are my files saved?</summary>
+    <p>In <code>Downloads\Donat Downloader</code> by default. You can change the folder in Settings.</p></details>
+  <details><summary>YouTube says "Sign in to confirm you're not a bot".</summary>
+    <p>Sign in to YouTube in your browser. With "YouTube login: Auto", Donat reuses that login only when YouTube asks for it.
+    You can also choose a browser or a <code>cookies.txt</code> file in Settings.</p></details>
+  <details><summary>Is it free?</summary>
+    <p>Yes. Donat Downloader is free and open source under the MIT license.</p></details>
+</section>
+
+<footer>
+  <div class="wrap">
+    Made by <a href="https://github.com/abdani">Dani Abdani</a> · <a href="https://github.com/abdani/Donat-Downloader">Source on GitHub</a> ·
+    MIT License<br>
+    Powered by <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> and <a href="https://ffmpeg.org">FFmpeg</a>.
+    Download only content you have the right to download.
+  </div>
+</footer>
+</body>
+</html>

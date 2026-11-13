@@ -4,12 +4,13 @@
 
 <p align="center">
   A fast, modern downloader for video and music from YouTube and 1,700+ other sites.<br>
-  Copy a link on tray, pick a format, done.
+  Copy a link - Notif on tray, pick a format, done.
 </p>
 
 <p align="center">
   <a href="../../releases/latest"><b>Download the latest release</b></a> ·
-  single <code>.exe</code>, nothing else to install
+  single <code>.exe</code>, nothing else to install ·
+  <a href="https://abdani.github.io/Donat-Downloader/">Website</a>
 </p>
 
 ![Dashboard](docs/images/dashboard.png)
@@ -83,7 +84,7 @@ python -m venv .venv
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | Download engine | Unlicense |
 | [FFmpeg](https://ffmpeg.org) | Merging, conversion, clips | LGPL 2.1+ (with LAME: LGPL, Opus: BSD) |
 | [QuickJS-ng](https://github.com/quickjs-ng/quickjs) | Solves YouTube's JavaScript challenges | MIT |
-| [Sun Valley ttk](https://github.com/rdbende/Sun-Valley-ttk-theme) | Windows 11 look for Tkinter | MIT |
+| [Sun Valley ttk](https://github.com/rdbende/Sun-Valley-ttk-theme) | Modern look for Tkinter | MIT |
 | [Pillow](https://python-pillow.org), [pystray](https://github.com/moses-palmer/pystray), [tkinterdnd2](https://github.com/Eliav2/tkinterdnd2) | Thumbnails, tray icon, drag & drop | MIT-CMU, LGPL-3.0, MIT |
 
 The bundled FFmpeg is built from unmodified sources by [`build-ffmpeg.sh`](build-ffmpeg.sh), without `--enable-gpl`.

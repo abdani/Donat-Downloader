@@ -1,0 +1,47 @@
+name: Bug report
+description: Something doesn't work or shows an error
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! The details below help reproduce the problem quickly.
+  - type: input
+    id: release
+    attributes:
+      label: Release
+      description: Which Donat Downloader release are you using?
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: ytdlp
+    attributes:
+      label: yt-dlp version
+      description: Shown at the bottom of Settings, for example "yt-dlp 2026.10.26".
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows
+      options: [Windows 11, Windows 10]
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link you tried to download
+      description: Leave it out if it is private.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Error log
+      description: |
+        Paste the last lines of `%APPDATA%\DonatDownloader\error.log` (paste that path into the Explorer address bar).
+        Remove anything private first, such as links you don't want to share.
+      render: text
