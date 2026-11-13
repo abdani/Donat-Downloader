@@ -19,7 +19,7 @@
 
 | Feature | Details |
 | --- | --- |
-| **Copy → download** | Copy a link anywhere and a card pops up above the tray. One click opens the format panel to confirm. |
+| **Copy → download** | Just copy a link (<kbd>Ctrl</kbd>+<kbd>C</kbd>). A notification pops up from the tray automatically. Click **Download with Donat Downloader**, pick a format, done. |
 | **1,700+ sites** | YouTube, TikTok, Instagram, X, SoundCloud, Bandcamp and more, via [yt-dlp](https://github.com/yt-dlp/yt-dlp). Playlists and channels go into their own folder. |
 | **Video** | MP4, MKV or WebM, up to 2160p, with H.264, VP9 or AV1 |
 | **Audio** | MP3 (128–320 kbps), M4A, Opus, FLAC or WAV |
@@ -53,7 +53,8 @@
 ## Usage
 
 1. Download `Donat Downloader.exe` from [Releases](../../releases/latest) and run it. It needs Windows 10 or 11, 64-bit.
-2. Copy a video link anywhere. You can also paste it into **Downloads**, or drag it onto the window.
+2. Copy a video link (<kbd>Ctrl</kbd>+<kbd>C</kbd>) from your browser or any app. A notification pops up from the tray automatically, so there is no need to open Donat first. Click **Download with Donat Downloader**.
+   You can also paste the link into **Downloads**, or drag it onto the window.
 3. Pick mode, resolution and format, then press **Download**.
 
 Files are saved to `Downloads\Donat Downloader` by default. You can change the folder in **Settings**.
