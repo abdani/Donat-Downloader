@@ -1,6 +1,8 @@
 <p align="center">
-  <a href="https://abdani.github.io/Donat-Downloader/"><img src="docs/images/hero.png?v=1" alt="Donat Downloader — copy a link, pick a format, done"></a>
+  <a href="https://abdani.github.io/Donat-Downloader/"><img src="docs/images/social-preview.png" alt="Donat Downloader — YouTube & 1,700+ sites, single exe"></a>
 </p>
+
+<h1 align="center">Donat Downloader</h1>
 
 <p align="center">
   A fast, modern downloader for video and music from YouTube and 1,700+ other sites.<br>
@@ -8,12 +10,19 @@
 </p>
 
 <p align="center">
-  <a href="../../releases/latest"><b>Download the latest release</b></a> ·
-  single <code>.exe</code>, nothing else to install ·
-  <a href="https://abdani.github.io/Donat-Downloader/">Website</a>
+  <img alt="Windows 10/11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
+  <img alt="Python 3.12" src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img alt="Powered by yt-dlp" src="https://img.shields.io/badge/yt--dlp-1%2C700%2B%20sites-F472B6?style=for-the-badge">
+  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge">
 </p>
 
-![Dashboard](docs/images/dashboard.png)
+<p align="center">
+  <a href="https://abdani.github.io/Donat-Downloader/"><b>🌐 Homepage</b></a> ·
+  <a href="../../releases/latest/download/Donat-Downloader.exe"><b>⬇ Download Donat-Downloader.exe</b></a> ·
+  single exe, nothing else to install
+</p>
+
+![Donat Downloader: dashboard, downloads and the tray card after copying a link](docs/images/hero.png?v=1)
 
 ## Features
 
