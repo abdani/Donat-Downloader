@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://abdani.github.io/Donat-Downloader/"><img src="docs/images/social-preview.png" alt="Donat Downloader — YouTube & 1,700+ sites, single exe"></a>
+  <a href="https://abdani.github.io/Donat-Downloader/"><img src="docs/images/social-preview.png?v=2" alt="Donat Downloader — YouTube & 1,700+ sites, single exe"></a>
 </p>
 
 <h1 align="center">Donat Downloader</h1>

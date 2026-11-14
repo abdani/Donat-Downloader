@@ -89,5 +89,26 @@ def hero():
     print(out, c.size, os.path.getsize(out) // 1024, "KB")
 
 
+def social():
+    """1280x640 card in the Donat Screen layout: donut + name left, overlapping app windows right."""
+    W, H = 1280, 640
+    c = gradient(W, H)
+    d = ImageDraw.Draw(c)
+    logo = Image.open(os.path.join(IMG, "donut.png")).convert("RGBA")
+    logo = logo.crop(logo.getchannel("A").getbbox()).resize((140, 140), Image.LANCZOS)
+    c.alpha_composite(logo, (75, 155))
+    title = font("segoeuib.ttf", 72)
+    d.text((72, 322), "Donat", font=title, fill=(255, 255, 255))
+    d.text((72, 398), "Downloader", font=title, fill=(255, 255, 255))
+    d.text((75, 497), "YouTube & 1,700+ sites", font=font("segoeuil.ttf", 27), fill=(222, 214, 232))
+    d.text((75, 535), "single exe  ·  free  ·  open source", font=font("segoeuil.ttf", 21), fill=(160, 150, 175))
+    place(c, shot("downloads.png", 0.5, r=8), W - 561 - 14, 64, blur=22, drop=14, opacity=170)
+    place(c, shot("dashboard.png", 0.5, r=8), 618, 262, blur=24, drop=16, opacity=200)
+    out = os.path.join(IMG, "social-preview.png")
+    c.convert("RGB").save(out, optimize=True)
+    print(out, c.size, os.path.getsize(out) // 1024, "KB")
+
+
 if __name__ == "__main__":
     hero()
+    social()
