@@ -2,7 +2,7 @@
 
 <p align="center">
   A fast, modern downloader for video and music from YouTube and 1,700+ other sites.<br>
-  Copy a link - Notif on tray, pick a format, done.
+  Just Copy - Notif on tray card, pick a format, done.
 </p>
 
 <p align="center">
