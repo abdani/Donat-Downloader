@@ -94,6 +94,9 @@ python -m venv .venv
 | [QuickJS-ng](https://github.com/quickjs-ng/quickjs) | Solves YouTube's JavaScript challenges | MIT |
 | [Sun Valley ttk](https://github.com/rdbende/Sun-Valley-ttk-theme) | Modern look for Tkinter | MIT |
 | [Pillow](https://python-pillow.org), [pystray](https://github.com/moses-palmer/pystray), [tkinterdnd2](https://github.com/Eliav2/tkinterdnd2) | Thumbnails, tray icon, drag & drop | MIT-CMU, LGPL-3.0, MIT |
+| [curl_cffi](https://github.com/lexiforest/curl_cffi) | Browser impersonation for sites that require it (e.g. TikTok, Dailymotion) | MIT |
+| [Python](https://www.python.org) + Tkinter ([Tcl/Tk](https://www.tcl-lang.org)) | The app and its interface | PSF-2.0, Tcl/Tk license (BSD-style) |
+| [PyInstaller](https://pyinstaller.org) | Packs everything into the single exe | GPL-2.0 with bootloader exception |
 
 The bundled FFmpeg is built from unmodified sources by [`build-ffmpeg.sh`](build-ffmpeg.sh), without `--enable-gpl`.
 
