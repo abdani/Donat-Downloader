@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/splash.png" alt="Donat Downloader" width="560">
+  <a href="https://abdani.github.io/Donat-Downloader/"><img src="docs/images/hero.png?v=1" alt="Donat Downloader — copy a link, pick a format, done"></a>
 </p>
 
 <p align="center">
@@ -71,6 +71,7 @@ python -m venv .venv
 .\.venv\Scripts\python donat_downloader.pyw          # run from source
 .\.venv\Scripts\python donat_downloader.pyw --test   # self-test
 .\build.ps1                                          # -> dist\Donat Downloader.exe
+.\.venv\Scripts\python -I tools\hero.py              # README/homepage banner -> docs\images\hero.png
 ```
 
 `build.ps1` does the following:
